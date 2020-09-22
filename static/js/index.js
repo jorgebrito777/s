@@ -3,27 +3,27 @@
 function ENDEDIDO_1() {
 	
 	message =new Paho.MQTT.Message("L10");
-	message.destinationName = "jorgebito777@gmail.com/RASP";
+	message.destinationName = "mdpilatuna.fie@unach.edu.ec/RASP";
 	client.send(message);
   
 }
 function ENDEDIDO_2(){	
 	
 	message =new Paho.MQTT.Message("L1N");
-	message.destinationName = "jorgebito777@gmail.com/RASP";
+	message.destinationName = "mdpilatuna.fie@unach.edu.ec/RASP";
 	client.send(message);
 }
 function ENDEDIDO_1_1() {
 	
 	message =new Paho.MQTT.Message("L2O");
-	message.destinationName = "jorgebito777@gmail.com/RASP";
+	message.destinationName = "mdpilatuna.fie@unach.edu.ec/RASP";
 	client.send(message);
   
 }
 function ENDEDIDO_2_2() {
 	
 	message =new Paho.MQTT.Message("L2N");
-	message.destinationName = "jorgebito777@gmail.com/RASP";
+	message.destinationName = "mdpilatuna.fie@unach.edu.ec/RASP";
 	client.send(message);
   
 }
@@ -42,8 +42,8 @@ function ENDEDIDO_2_2() {
   client.onMessageArrived = onMessageArrived;
   var options = {
    useSSL: false,
-    userName: "jorgebito777@gmail.com",
-    password: "proevolution10",
+    userName: "mdpilatuna.fie@unach.edu.ec",
+    password: "quitociudadhermosa",
     onSuccess:onConnect,
     onFailure:doFail
   }
@@ -56,9 +56,9 @@ function ENDEDIDO_2_2() {
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("jorgebito777@gmail.com/WEB");
+    client.subscribe("mdpilatuna.fie@unach.edu.ec/WEB");
     message = new Paho.MQTT.Message("hola desde la web");
-    message.destinationName = "jorgebito777@gmail.com/RASP";
+    message.destinationName = "mdpilatuna.fie@unach.edu.ec/RASP";
     client.send(message);
 	
   }
